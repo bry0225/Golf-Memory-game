@@ -1,6 +1,7 @@
 const golf = ['images/golfer1.jpeg', 'images/golfer2.jpeg', 'images/golfer3.jpeg', 'images/golfer4.jpeg'];
 
-//const cards = 
+const cards = [];
+//object that will hold card status. Showing, matched with another card, image of card.
 
 const canvases = document.getElementsByClassName('card')
 
@@ -10,6 +11,18 @@ for (let i = 0; i < canvases.length; i++) {
     //context is a var that allows to draw on the canvas
     context.fillStyle = 'blue';
     context.fillRect(0, 0, canvas.width, canvas.height);
+
+    var card = {
+
+    }
+
+    card.show = function() {
+
+    }
+
+    card.hide = function() {
+
+    }
 
     canvas.addEventListener('click', function(){
         console.log('a card was click')
